@@ -42,5 +42,4 @@ Route::middleware('auth')->group(function () {
 Route::get('/profile', [DashboardController::class, 'profile'])->name('profile');
 Route::get('/upload-documents', [DashboardController::class, 'uploadDocuments'])->name('upload.documents');
 Route::post('/profile/update', [DashboardController::class, 'updateProfile'])->name('profile.update');
-Route::get('/profile', [ProfileController::class, 'show'])->name('profile');
 Route::get('/upload-documents', [UploadController::class, 'index'])->name('upload.documents');
